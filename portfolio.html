@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ysabella's Resume</title>
+        <!--icon for website-->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+<body class ="bg-gray-300">
+    
+    <!--NAVBAR SECTION-->
+    <!--right SECTION-->
+
+    <nav class="bg-gray-400 shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            
+            <!-- Right side of navbar / logo-->
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="images/favicon.png" alt="Logo" class="h-12 w-12 object-contain">
+                <span class="text-lg font-semibold text-gray-800 hover:text-cyan-200 transition ease-in-out duration-700">Ysabella Kristine Romero</span>
+            </a>
+
+            <!-- Left side of navbar / Nav Buttons -->
+            <ul class="flex space-x-2">
+                <li>
+                    <a href="education.html" class="text-gray-800 px-4 py-2 rounded hover:bg-pink-300 hover:text-pink-600 transition ease-in-out duration-700">Education</a>
+                </li>
+                <li>
+                    <a href="experience.html" class="text-gray-800 px-4 py-2 rounded hover:bg-red-300 hover:text-red-600 transition ease-in-out duration-700">Experience</a>
+                </li>
+                <li>
+                    <a href="portfolio.html" class="text-gray-800 px-4 py-2 rounded hover:bg-purple-300 hover:text-purple-600 transition ease-in-out duration-700">Portfolio</a>
+                </li>
+                <li>
+                    <a href="certificate.html" class="text-gray-800 px-4 py-2 rounded hover:bg-blue-300 hover:text-indigo-600 transition ease-in-out duration-700">Certificates</a>
+                </li>
+                <li>
+                    <a href="profiles.html" class="text-gray-800 px-4 py-2 rounded hover:bg-indigo-300 hover:text-indigo-600 transition ease-in-out duration-700">Profiles</a>
+                </li>
+            </ul>
+  </div>
+</nav>
+
+    <!--BODY SECTION-->
+    <!--layout container my beloved-->
+    <div class="flex flex-col min-h-screen mb-20">
+  
+            <!--  title -->
+            <h1 class="text-2xl text-center font-semibold mt-20">Portfolio</h1>
+            <hr class="my-6 border-gray-800 w-3/4 mx-auto">
+            <div class="flex justify-center gap-2 mb-8">
+                <button onclick="filterCards('all')" class="px-4 py-2 bg bg-gray-600 text-white rounded hover:bg-red-500 hover:text-black transition ease-in-out duration-700">All</button>
+                <button onclick="filterCards('web')" class="px-4 py-2 bg bg-gray-600 text-white rounded hover:bg-orange-400 hover:text-black transition ease-in-out duration-700">Web Development</button>
+                <button onclick="filterCards('design')" class="px-4 py-2 bg bg-gray-600 text-white rounded hover:bg-yellow-400 hover:text-black transition ease-in-out duration-700">Graphic Design</button>
+                <button onclick="filterCards('analysis')" class="px-4 py-2 bg bg-gray-600 text-white rounded hover:bg-green-400 hover:text-black transition ease-in-out duration-700">Data Analysis</button>
+                <button onclick="filterCards('others')" class="px-4 py-2 bg bg-gray-600 text-white rounded hover:bg-blue-400 hover:text-black transition ease-in-out duration-700">Others</button>
+
+            </div>
+            <!-- filter buttons -->
+
+
+            <!-- card grid -->
+            <div id="cardContainer" class="grid grid-cols-2 gap-6 mx-auto">
+                
+            <!-- start of cards -->
+            <!-- card 1 -->
+                <div class="card web design max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Sample Website for Siquijor </h1>
+                        <p class ="font-normal"> HTML | Bootstrap CSS <br></p>
+                    <hr class="my-3 border-gray-800 w-full mx-auto">
+            
+                        <p class ="mb-3 font-normal"> Showcased front end developmental skills to create a tourism website for Siquijor</p>
+                        <a href ="https://github.com/ysabellakristine2/website_siquijor" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Repository </a>
+                        <a href ="https://ysabellakristine2.github.io/website_siquijor/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-pink-500">Website </a>
+                </div>
+
+                <!-- card 2  -->
+                <div class="card web design max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Burger Restaurant Website </h1>
+                        <p class ="font-normal"> HTML | JavaScript | Tailwind CSS<br> </p>
+                    <hr class="my-3 border-gray-800 w-full mx-auto">
+            
+                        <p class ="mb-3 font-normal"> Designed a dynamic menu page for a fictional burger restaurant with interactive ordering functionality using only vanilla JavaScript.</p>
+                        <a href ="https://github.com/ysabellakristine2/mettaton_burger" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Repository </a>
+                        <a href ="https://ysabellakristine2.github.io/mettaton_burger/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-pink-500">Website </a>
+                </div>
+
+                <!-- card 3  -->
+                <div class="card web max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Job Application Website </h1>
+                        <p class ="font-normal"> HTML | PHP | Basic CSS<br> </p>
+                    <hr class="my-3 border-gray-800 w-full mx-auto">
+                        <p class ="mb-3 font-normal"> A website used to showcase PHP capability of adding a job application for both job users and HR users. Focuses more on PHP capability than design</p>
+                        <a href ="https://github.com/ysabellakristine2/PHP_FINALS_3RDYEAR" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Repository</a>
+                </div>
+
+                <!-- card 4  -->
+                <div class="card web design max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Google Docs Website </h1>
+                        <p class ="font-normal"> HTML | JavaScript | PHP | Tailwind CSS<br> </p>
+                    <hr class="my-3 border-gray-800 w-full mx-auto">
+                        <p class ="mb-3 font-normal"> A website used to showcase PHP and vanilla JavaScript capability in creating a similar website to Google Docs.</p>
+                        <a href ="https://github.com/ysabellakristine2/clone_googledocs" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Repository </a>
+                </div>
+
+                <!-- card 5  -->
+                <div class="card web design max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Resume Website </h1>
+                        <p class ="font-normal"> HTML | JavaScript | Tailwind CSS<br> </p>
+                    <hr class="my-3 border-gray-800 w-full mx-auto">
+                        <p class ="mb-3 font-normal"> This resume website</p>
+                        <a href ="https://github.com/ysabellakristine2/ysabella_portfolio" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Repository </a>
+                </div>
+            <!-- card 6 -->
+                <div class="card design max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Straight to the Point Book</h1>
+                        <p class ="font-normal"> Canva<br> </p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                    <p class ="mb-3 font-normal"> A calculus book covering three topics. Input was made by groupmates but I designed it.</p>
+                    <a href ="https://www.canva.com/design/DAE3FYPuNi0/opA31mQHUVwKuKz5bZlmfg/edit?utm_content=DAE3FYPuNi0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Canva Page </a>
+                </div>
+            
+                <!-- card 7 -->
+                <div class="card design max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Prevent Teenage Pregnancy promotion materials</h1>
+                        <p class ="font-normal"> Canva<br> </p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                    <p class ="mb-3 font-normal"> Promotion materials for the Facebook page to prevent Teenage Pregnancy</p>
+                    <a href ="https://www.canva.com/design/DAFE4LccLUE/921p_ax4NqWCIx5RssKYCw/edit?utm_content=DAFE4LccLUE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Poster </a>
+                    <a href ="https://www.canva.com/design/DAGpjWDPxYQ/0idMaEG49RyDgMjBi6Zs9w/edit?utm_content=DAGpjWDPxYQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-pink-500">MAC </a>
+                </div>
+
+                <!-- card 8 -->
+                <div class="card design max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Intercultural Infographic </h1>
+                        <p class ="font-normal"> Canva<br> </p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                    <p class ="mb-3 font-normal"> Infographic explaining what Intercultural is. Written in Tagalog </p>
+                    <a href ="https://www.canva.com/design/DAFB37OHp2M/WKgtswrTuI_9-8ok4GMt6Q/edit?utm_content=DAFB37OHp2M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Infographic </a>
+                </div>
+
+                <!-- card 9 -->
+                <div class="card design max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Data Visualization Infographic </h1>
+                        <p class ="font-normal"> Canva<br> </p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                    <p class ="mb-3 font-normal"> Data Visualization for an example survey results. </p>
+                    <a href ="https://www.canva.com/design/DAE6uo-pyik/LzTmMmhxelGqK7rWJoGw1g/edit?utm_content=DAE6uo-pyik&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Infographic </a>
+                </div>
+
+                <!-- card 10 -->
+                <div class="card design max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Pictorial Essay </h1>
+                        <p class ="font-normal"> Canva<br> </p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                    <p class ="mb-3 font-normal"> Pictorial Essay of how mental health is treated in varying countries. Written in Tagalog. </p>
+                    <a href ="https://www.canva.com/design/DAFFCZQ85uA/lbyeO2KEdCN1yPEMioe2dQ/edit?utm_content=DAFFCZQ85uA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Infographic </a>
+                </div>
+
+                <!-- card 11 -->
+                <div class="card design others max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Digital Art </h1>
+                        <p class ="font-normal"> Pages of Digital Art <br> </p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                    <p class ="mb-3 font-normal"> Collection of Digital Artwork </p>
+                    <a href ="https://www.tumblr.com/romero-ysabellakristine-b?source=share" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500 hover:text-white">1st Tumblr </a>
+                    <a href ="https://www.tumblr.com/blog/fandom-trash-426" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-600 hover:text-white">2nd Tumblr </a>
+                    <a href ="privacy.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-purple-500 hover:text-white">Instagram </a>
+                </div>
+
+                <!-- card 12 -->
+                <div class="card others max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Facebook page links</h1>
+                        <p class ="font-normal"> Pages I was involved with<br> </p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                    <a href ="https://www.facebook.com/Prevent-Teenage-Pregnancy-Campaign-110810071670520/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-pink-500">Prevent Teenage Pregnancy</a>
+                    <a href ="https://www.facebook.com/profile.php?id=100081263620504" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-green-500">Bagong Kabataan, Bagong Kabanata </a>
+                    <a href ="https://www.facebook.com/laconic.riviere/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-orange-500">Laconic Riviere </a>
+                </div>
+
+                <!-- card 13 -->
+                <div class="card others max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Logisim projects</h1>
+                        <p class ="font-normal"> Google Drive link to folders that has the following: </p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                        <ul class="list-disc list-inside ml-5 text-sm gap-2">
+                            <li>A logisim version of an 8085 microprocessor</li>
+                            <li>Both prelim_exam.circ and video.circ has: 4 bit ALU, 2-1 MUX, Subtraction (without using subtractors), and a 4 bit Adder</li>
+                        </ul>
+                    <a href ="https://drive.google.com/drive/folders/1nZuscVdqCLJFaOxL9qfUWcCN_dp1U0ox?usp=sharing" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-green-500">Google Drive Folder</a>
+                </div>
+
+                <!-- card 14 -->
+                <div class="card others max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> CISCO Packet Tracer projects</h1>
+                        <p class ="font-normal"> Google Drive link to my CISCO Packet Tracer related projects</p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                    <a href ="https://drive.google.com/drive/folders/1Y0UrDqsFwIia4pRsJzD4Dfiag6Gqw6ya?usp=sharing" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-green-500">Google Drive Folder</a>
+                </div>
+
+                <!-- card 15 -->
+                <div class="card others max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> General Portfolio</h1>
+                        <p class ="font-normal"> Google Drive link to some items of my portfolio </p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                    <a href ="https://drive.google.com/drive/folders/1eEFdKY8GRw14zrfpM-5T_0I-O7s-CZuQ?usp=sharing" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-green-500">Google Drive Folder</a>
+                </div>
+
+                <!-- card 16 -->
+                <div class="card analysis max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Gym Dashboard </h1>
+                        <p class ="font-normal"> Looker Studio </p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                        <p class ="font-normal"> Dashboard of Sample Gym Data</p>
+                    <a href ="https://lookerstudio.google.com/reporting/5d42be50-1c5e-4471-aa41-ee1b00a5c2cf" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-green-500">View Looker Studio</a>
+                </div>
+                <!-- card 17 -->
+                <div class="card analysis max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Job Applicants Dashboard </h1>
+                        <p class ="font-normal"> Looker Studio </p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                        <p class ="font-normal"> Dashboard of Sample Job Applicants</p>
+                    <a href ="https://lookerstudio.google.com/reporting/2eacdc25-4c81-4f7b-81a8-6851065fe4de" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-green-500">View Looker Studio</a>
+                </div>
+                <!-- card 18 -->
+                <div class="card analysis max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Construction Company Dashboard </h1>
+                    <p class ="font-normal"> Looker Studio </p>
+                    <hr class="my-3 border-gray-800 w-full mx-auto">
+                        <p class ="font-normal"> Dashboard of Sample Construction Companies data to expose a hypothetical corruption</p>
+                    <a href ="https://lookerstudio.google.com/reporting/62d12afe-0a1d-4eb0-be5c-690814a65340" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-green-500">View Looker Studio</a>
+                </div>
+                <!-- card 19 -->
+                <div class="card analysis max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> DVD Rental Dashboard </h1>
+                        <p class ="font-normal"> Looker Studio </p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                        <p class ="font-normal"> Dashboard of Sample DVD Rental Store Sales</p>
+                    <a href ="https://lookerstudio.google.com/reporting/79d62fdf-1d40-4ab2-b57c-60c12e828fb7" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-green-500">View Looker Studio</a>
+                </div>
+                <!-- card 20  -->
+                <div class="card web max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Order Management System </h1>
+                        <p class ="font-normal"> HTML | JavaScript | PHP | Tailwind CSS | tcpdf <br> </p>
+                    <hr class="my-3 border-gray-800 w-full mx-auto">
+                        <p class ="mb-3 font-normal"> Two roles: Superadmin and Admin / Cashier. <br> <br> Admins/Cashiers can manage orders, do transactions, see and filter transaction history, and download PDF of transaction history. 
+                            <br> <br> Superadmins can do everything an Admin does but also, they can create admin accounts and suspend and reactivate cashier accounts</p>
+                        <a href ="https://github.com/ysabellakristine2/Order-Management-System" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Repository </a>
+                </div>
+                <!-- card 21  -->
+                <div class="card web max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Newspaper Mainenance System </h1>
+                        <p class ="font-normal"> HTML | JavaScript | PHP | Tailwind CSS | <br> </p>
+                    <hr class="my-3 border-gray-800 w-full mx-auto">
+                        <p class ="mb-3 font-normal"> Two roles: Writer and Admin. Writers can create articles and admins can approve articles </p>
+                        <a href ="https://github.com/ysabellakristine2/newspaper_maintenance" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Repository </a>
+                </div>
+                <!-- card 22  -->
+                <div class="card others max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> A Student's Guide to CISCO Packet Tracer </h1>
+                        <p class ="font-normal"> Google Docs | CISCO Packet Tracer<br> </p>
+                    <hr class="my-3 border-gray-800 w-full mx-auto">
+                        <p class ="mb-3 font-normal"> A simple guide in using CISCO Packet Tracer. Includes a basic understanding of Security Fundamentals </p>
+                        <a href ="https://docs.google.com/document/d/1KZLfJK_sql4oFxTSLjZWOKssgo54zUFp6pKd2oSdcqU/edit?usp=sharing" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Book Link</a>
+                </div>
+                <!-- card 23 -->
+                <div class="card analysis max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Meat Purchase Sales </h1>
+                        <p class ="font-normal"> Tableau Public </p>
+                        <hr class="my-3 border-gray-800 w-full mx-auto">
+                        <p class ="font-normal"> Dashboard of Sample Meat Purchase Sales</p>
+                    <a href ="https://public.tableau.com/app/profile/ysabella.kristine.beringuel.romero/viz/MeatPurchasesSales/Dashboard" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-green-500">View Dashboard</a>
+                </div>
+        </div>
+    </div>
+
+
+
+
+    <!--FOOTER SECTION-->
+    <!--note: mt auto and py 4 will only work for footer if and only if the content is in flex flex column min-h-screen fyi-->
+<footer class="bg-gray-400 text-gray-100 mt-auto py-4">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <!--Left side-->
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <h1 class="text-gray-800 hover:cursor-help">Contact me:</h1>
+
+        <!--right side-->    
+        <ul class="flex flex-wrap items-center gap-2 mb-6 sm:mb-0">
+            <li>
+                <a href = "https://www.linkedin.com/in/ysabella-kristine-romero-0a472b362/" class="text-gray-800 px-4 py-2 rounded hover:bg-gray-500 hover:text-cyan-200 transition ease-in-out duration-700">LinkedIn</a></li>
+            <li>
+                <a href = "privacy.html" class="text-gray-800 px-4 py-2 rounded hover:bg-gray-500 hover:text-cyan-300 transition ease-in-out duration-700">Facebook</a></li>
+            <li>
+                <a href = "https://github.com/ysabellakristine" class="text-gray-800 px-4 py-2 rounded hover:bg-gray-500 hover:text-cyan-400 transition ease-in-out duration-700">Github</a></li>
+        </ul>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <p class="block text-sm text-gray-800 sm:text-center"> <a href ="index.html" class="hover:underline">© 2025 Ysabella Kristine Romero </a></p> 
+    </div>
+</footer>
+<script>
+
+function filterCards(category){
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        if (category === 'all' || card.classList.contains(category)){
+            card.style.display = 'block';
+        } else{
+            card.style.display = 'none';
+        }
+    });
+}
+</script>
+</body>
+</html>
