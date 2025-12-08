@@ -31,6 +31,24 @@
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
         background: rgba(0, 0, 0, 0.5);
         }
+        /* scrollbar to make it beautiful */
+        .custom-scrollbar-purple::-webkit-scrollbar {
+        width: 8px;
+        }
+
+        .custom-scrollbar-purple::-webkit-scrollbar-track {
+        background: rgb(195, 0, 255);
+        border-radius: 9999px;
+        }
+
+        .custom-scrollbar-purple::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 9999px;
+        }
+
+        .custom-scrollbar-purple::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.5);
+        }
     </style>
 <body class ="bg-gray-300">
     
@@ -105,7 +123,7 @@
 
             <div id="modalTechSkills" class="fixed inset-0 hidden z-50 items-center justify-center bg-black bg-opacity-50">
                 <!-- Modal Box -->
-                <div class="modal-box bg-pink-400 w-[90vw] max-w-[1000px] max-h-[90vh] p-10 rounded-xl shadow-2xl relative mx-auto overflow-y-auto custom-scrollbar">
+                <div class="modal-box bg-pink-400 w-[90vw] max-w-[125vh] max-h-[90vh] p-10 rounded-xl shadow-2xl relative mx-auto overflow-y-auto custom-scrollbar">
                     <!-- Close Button -->
                     <button onclick="toggleModal('modalTechSkills')" class="absolute top-2 right-3 text-gray-700 hover:text-red-600 text-4xl font-bold">&times;</button>
 
@@ -214,7 +232,7 @@
         <!-- START OF SOFT SKILLS MODAL-->
             <div id="modalSkills" class="fixed inset-0 hidden z-50 items-center justify-center bg-black bg-opacity-50">
                 <!-- Modal Box -->
-                <div class="modal-box bg-pink-400 w-[90vw] max-w-[1000px] max-h-[90vh] p-10 rounded-xl shadow-2xl relative mx-auto overflow-y-auto custom-scrollbar">
+                <div class="modal-box bg-purple-400 w-[90vw] max-w-[125vh] max-h-[90vh] p-10 rounded-xl shadow-2xl relative mx-auto overflow-y-auto custom-scrollbar-purple">
                     <!-- Close Button -->
                     <button onclick="toggleModal('modalSkills')" class="absolute top-2 right-3 text-gray-700 hover:text-red-600 text-4xl font-bold">&times;</button>
 
