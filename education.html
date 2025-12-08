@@ -15,30 +15,49 @@
     <!--NAVBAR SECTION-->
     <!--right SECTION-->
 
+    <!--NAVBAR SECTION-->
+    <!--right SECTION-->
+
     <nav class="bg-gray-400 shadow-xl">
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
             
             <!-- Right side of navbar / logo-->
-            <a href="index.html" class="flex items-center space-x-2">
-                <img src="images/favicon.png" alt="Logo" class="h-12 w-12 object-contain">
-                <span class="text-lg font-semibold text-gray-800 hover:text-cyan-200 transition ease-in-out duration-700">Ysabella Kristine Romero</span>
-            </a>
+            <span>
+                <a href="index.html" class="flex items-center space-x-2">
+                <img src="images/favicon.png" alt="Logo" class="h-10 inline object-contain">
+                    <span class="text-lg font-semibold text-gray-800 hover:text-cyan-200 transition ease-in-out duration-700">Ysabella Kristine Romero</span>
+                </a>
+            </span>
 
+            <!-- hamberger icon for mobile-->
+             <span class="text-3xl cursor-pointer mx-2 flex md:hidden">
+                <i data-lucide="menu" onclick="Menu(this)" class="w-9 h-9 text-gray-700 text-opacity-50"></i>
+             </span>
             <!-- Left side of navbar / Nav Buttons -->
-            <ul class="flex space-x-2">
-                <li>
+            <ul id="menu-list" class="md:flex md:items-center md:static fixed top-0 right-0 h-full w-3/4 border-2 border-gray-500 md:border-0
+                    bg-gray-400 z-50 md:w-auto md:h-auto transform translate-x-full md:translate-x-0 transition-transform duration-500 text-center text-xl md:text-base">
+                
+                    <!-- Close Button -->
+                <li class="flex justify-end p-4 md:hidden">
+                    <button onclick="Menu()">
+                        <i data-lucide="square-x" class="w-9 h-9 text-gray-700 text-opacity-50"></i>
+                    </button>
+                </li> 
+
+                <!-- START OF MENU LIST -->
+                <li class="my-11 md:my-0 mx-2">
                     <a href="education.html" class="text-gray-800 px-4 py-2 rounded hover:bg-pink-300 hover:text-pink-600 transition ease-in-out duration-700">Education</a>
                 </li>
-                <li>
+                <li class="my-11 md:my-0 mx-2">
                     <a href="experience.html" class="text-gray-800 px-4 py-2 rounded hover:bg-red-300 hover:text-red-600 transition ease-in-out duration-700">Experience</a>
                 </li>
-                <li>
+                <li class="my-11 md:my-0 mx-2">
                     <a href="portfolio.html" class="text-gray-800 px-4 py-2 rounded hover:bg-purple-300 hover:text-purple-600 transition ease-in-out duration-700">Portfolio</a>
                 </li>
-                <li>
+                <li class="my-11 md:my-0 mx-2">
                     <a href="certificate.html" class="text-gray-800 px-4 py-2 rounded hover:bg-blue-300 hover:text-indigo-600 transition ease-in-out duration-700">Certificates</a>
                 </li>
-                <li>
+                <li class="my-11 md:my-0 mx-2">
                     <a href="profiles.html" class="text-gray-800 px-4 py-2 rounded hover:bg-indigo-300 hover:text-indigo-600 transition ease-in-out duration-700">Profiles</a>
                 </li>
             </ul>
@@ -82,7 +101,7 @@
                     <!-- MODALS for Achievements -->
                 <div id="modalEAC" class="fixed inset-0 hidden z-50 items-center justify-center bg-black bg-opacity-50">
                 <!-- Modal Box -->
-                    <div class="modal-box bg-red-400 w-[90vw] max-w-[1000px] max-h-[90vh] p-10 rounded-xl shadow-2xl relative mx-auto my-auto">
+                    <div class="modal-box bg-red-400 w-[90vw] max-w-[125vh] max-h-[90vh] p-10 rounded-xl shadow-2xl relative mx-auto my-auto">
                         <!-- Close Button -->
                         <button onclick="toggleModal('modalEAC')" class="absolute top-2 right-3 text-gray-700 hover:text-red-600 text-4xl font-bold">&times;</button>
                         <!-- Header -->
@@ -98,25 +117,25 @@
                                 <div class="flex items-center gap-2">
                                     <i data-lucide="code" class="w-6 h-6 text-red-800 ms-2"></i> 
                                     
-                                    Built a tourism website for Siquijor using <b>HTML</b>and<b>Bootstrap</b> to demonstrate front-end development skills 
+                                    Built a tourism website for Siquijor using HTML and Bootstrap  to demonstrate front-end development skills 
                                 </div>
                             </li>
                             <li class="items-center hover:bg-white transition duration-700 rounded-lg cursor-default">
                                 <div class="flex items-center gap-2">
                                     <i data-lucide="code" class="w-6 h-6 text-red-800 ms-2"></i>
-                                Designed a dynamic menu and ordering interface for a fictional burger restaurant using only <b>vanilla JavaScript</b>
+                                Designed a dynamic menu and ordering interface for a fictional burger restaurant using only vanilla JavaScript
                             </div>
                             </li>
                                <li class="items-center hover:bg-white transition duration-700 rounded-lg cursor-default">
                                 <div class="flex items-center gap-2">
                                     <i data-lucide="code" class="w-6 h-6 text-red-800 ms-2"></i>
-                                    Developed a job portal website in <b>PHP</b> for both applicants and HR users, highlighting form handling and database interaction. 
+                                    Developed a job portal website in PHP for both applicants and HR users, highlighting form handling and database interaction. 
                                 </div>
                                 </li>
                                <li class="items-center hover:bg-white transition duration-700 rounded-lg cursor-default">
                                 <div class="flex items-center gap-2">
                                     <i data-lucide="code" class="w-6 h-6 text-red-800 ms-2"></i>
-                                    Created a collaborative document editing platform using <b>PHP</b> and <b>vanilla JavaScript</b>, simulating key features of Google Docs. 
+                                    Created a collaborative document editing platform using PHP and vanilla JavaScript, simulating key features of Google Docs. 
                                 </div>
                                 </li>
                                <li class="items-center hover:bg-white transition duration-700 rounded-lg cursor-default">
@@ -131,7 +150,7 @@
 
         <div id="modalDLSUD" class="fixed inset-0 hidden z-50 items-center justify-center bg-black bg-opacity-50">
                 <!-- Modal Box -->
-                <div class="modal-box bg-green-400 w-[90vw] max-w-[1000px] max-h-[90vh] overflow-y-auto p-10 rounded-xl shadow-2xl relative mx-auto my-auto">
+                <div class="modal-box bg-green-400 w-[90vw] max-w-[125vh] max-h-[90vh] overflow-y-auto p-10 rounded-xl shadow-2xl relative mx-auto my-auto">
                     <!-- Close Button -->
                     <button onclick="toggleModal('modalDLSUD')" class="absolute top-2 right-3 text-gray-700 hover:text-red-600 text-4xl font-bold">&times;</button>
                     
@@ -201,6 +220,11 @@
 <script>
         // FOR LUCIDE ICONS
     lucide.createIcons();
+
+    function Menu(icon) {
+        const menu = document.getElementById("menu-list");
+            menu.classList.toggle("translate-x-full");
+    }
 
     function toggleModal(modalId) {
         const modal = document.getElementById(modalId);
