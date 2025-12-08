@@ -11,33 +11,49 @@
     </head>
 <body class ="bg-gray-300">
     
-    <!--NAVBAR SECTION-->
+<!--NAVBAR SECTION-->
     <!--right SECTION-->
 
     <nav class="bg-gray-400 shadow-xl">
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
             
             <!-- Right side of navbar / logo-->
-            <a href="index.html" class="flex items-center space-x-2">
-                <img src="images/favicon.png" alt="Logo" class="h-12 w-12 object-contain">
-                <span class="text-lg font-semibold text-gray-800 hover:text-cyan-200 transition ease-in-out duration-700">Ysabella Kristine Romero</span>
-            </a>
+            <span>
+                <a href="index.html" class="flex items-center space-x-2">
+                <img src="images/favicon.png" alt="Logo" class="h-10 inline object-contain">
+                    <span class="text-lg font-semibold text-gray-800 hover:text-cyan-200 transition ease-in-out duration-700">Ysabella Kristine Romero</span>
+                </a>
+            </span>
 
+            <!-- hamberger icon for mobile-->
+             <span class="text-3xl cursor-pointer mx-2 flex md:hidden">
+                <i data-lucide="menu" onclick="Menu(this)" class="w-9 h-9 text-gray-700 text-opacity-50"></i>
+             </span>
             <!-- Left side of navbar / Nav Buttons -->
-            <ul class="flex space-x-2">
-                <li>
+            <ul id="menu-list" class="md:flex md:items-center md:static fixed top-0 right-0 h-full w-3/4 border-2 border-gray-500 md:border-0
+                    bg-gray-400 z-50 md:w-auto md:h-auto transform translate-x-full md:translate-x-0 transition-transform duration-500 text-center text-xl md:text-base">
+                
+                    <!-- Close Button -->
+                <li class="flex justify-end p-4 md:hidden">
+                    <button onclick="Menu()">
+                        <i data-lucide="square-x" class="w-9 h-9 text-gray-700 text-opacity-50"></i>
+                    </button>
+                </li> 
+
+                <!-- START OF MENU LIST -->
+                <li class="my-11 md:my-0 mx-2">
                     <a href="education.html" class="text-gray-800 px-4 py-2 rounded hover:bg-pink-300 hover:text-pink-600 transition ease-in-out duration-700">Education</a>
                 </li>
-                <li>
+                <li class="my-11 md:my-0 mx-2">
                     <a href="experience.html" class="text-gray-800 px-4 py-2 rounded hover:bg-red-300 hover:text-red-600 transition ease-in-out duration-700">Experience</a>
                 </li>
-                <li>
+                <li class="my-11 md:my-0 mx-2">
                     <a href="portfolio.html" class="text-gray-800 px-4 py-2 rounded hover:bg-purple-300 hover:text-purple-600 transition ease-in-out duration-700">Portfolio</a>
                 </li>
-                <li>
+                <li class="my-11 md:my-0 mx-2">
                     <a href="certificate.html" class="text-gray-800 px-4 py-2 rounded hover:bg-blue-300 hover:text-indigo-600 transition ease-in-out duration-700">Certificates</a>
                 </li>
-                <li>
+                <li class="my-11 md:my-0 mx-2">
                     <a href="profiles.html" class="text-gray-800 px-4 py-2 rounded hover:bg-indigo-300 hover:text-indigo-600 transition ease-in-out duration-700">Profiles</a>
                 </li>
             </ul>
@@ -79,12 +95,12 @@
 
                 <!-- card 2  -->
                 <div class="card certificate max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
-                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> Javascript Certification</h1>
-                        <p class ="font-normal"> Free Code Camp<br> </p>
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight">Certificate of Completion</h1>
+                        <p class ="font-normal"> IT Internship - Ollopa Corporation<br> </p>
                     <hr class="my-3 border-gray-800 w-full mx-auto">
             
-                        <p class ="mb-3 font-normal"> Cerification</p>
-                        <a href ="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Certificate </a>                
+                        <p class ="mb-3 font-normal"> My school-required internship as an IT intern in Ollopa Corporation</p>
+                        <a href ="https://drive.google.com/file/d/1FB_o4p6KPbr_1konVJ7Jzq78rJgdloq9/view?usp=sharing" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Certificate </a>                
                 </div>
 
                 <!-- card 3  -->
@@ -106,6 +122,18 @@
             
                         <p class ="mb-3 font-normal"> Certified able to use Microsoft Word Efficiently</p>
                         <a href ="https://drive.google.com/file/d/1NFLs7mL-DcrAkZmETV-fH1uGblW5Rkw_/view?usp=sharing" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Certificate </a>                
+                </div>
+                <!-- card 4  -->
+                <div class="card seminar max-w-lg p-6 bg-white border border-gray-400 rounded-lg shadow-xl text-black">
+                    <h1 class="mb-3 text-2xl font-semibold tracking-tight"> The AI Assessment Navigator </h1>
+                        <p class ="font-normal"> PCS-MMM TECHTALKS!<br></p>
+                    <hr class="my-3 border-gray-800 w-full mx-auto">
+            
+                        <p class ="mb-3 font-normal"> <b>Speaker: Diorel Acevedo </b><br>
+                        <i>November 27, 2025</i> <br>
+                        Introduces the AI Assessment Navigator 
+                    </p>
+                        <a href ="https://drive.google.com/file/d/1FZOat8LVC71WUMYP1oc2RaXp0w3TdNf1/view?usp=sharing" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-lg hover:bg-blue-500">Certificate Link </a>
                 </div>
 
                 
@@ -140,15 +168,22 @@
 </footer>
 <script>
 
-function filterCards(category){
-    const cards = document.querySelectorAll('.card');
-    cards.forEach(card => {
-        if (category === 'all' || card.classList.contains(category)){
-            card.style.display = 'block';
-        } else{
-            card.style.display = 'none';
-        }
-    });
+    lucide.createIcons();
+
+    function Menu(icon) {
+        const menu = document.getElementById("menu-list");
+            menu.classList.toggle("translate-x-full");
+    }
+    
+    function filterCards(category){
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            if (category === 'all' || card.classList.contains(category)){
+                card.style.display = 'block';
+            } else{
+                card.style.display = 'none';
+            }
+        });
 }
 </script>
 </body>
