@@ -8,36 +8,54 @@
     <link rel="icon" href="images/favicon.png" type="image/png">
 
     <script src="https://cdn.tailwindcss.com"></script>
+        <!--icons for modal-->
+    <script src="https://unpkg.com/lucide@latest"></script>
     </head>
 <body class ="bg-gray-300">
     
-    <!--NAVBAR SECTION-->
+<!--NAVBAR SECTION-->
     <!--right SECTION-->
 
     <nav class="bg-gray-400 shadow-xl">
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
             
             <!-- Right side of navbar / logo-->
-            <a href="index.html" class="flex items-center space-x-2">
-                <img src="images/favicon.png" alt="Logo" class="h-12 w-12 object-contain">
-                <span class="text-lg font-semibold text-gray-800 hover:text-cyan-200 transition ease-in-out duration-700">Ysabella Kristine Romero</span>
-            </a>
+            <span>
+                <a href="index.html" class="flex items-center space-x-2">
+                <img src="images/favicon.png" alt="Logo" class="h-10 inline object-contain">
+                    <span class="text-lg font-semibold text-gray-800 hover:text-cyan-200 transition ease-in-out duration-700">Ysabella Kristine Romero</span>
+                </a>
+            </span>
 
+            <!-- hamberger icon for mobile-->
+             <span class="text-3xl cursor-pointer mx-2 flex md:hidden">
+                <i data-lucide="menu" onclick="Menu(this)" class="w-9 h-9 text-gray-700 text-opacity-50"></i>
+             </span>
             <!-- Left side of navbar / Nav Buttons -->
-            <ul class="flex space-x-2">
-                <li>
+            <ul id="menu-list" class="md:flex md:items-center md:static fixed top-0 right-0 h-full w-3/4 border-2 border-gray-500 md:border-0
+                    bg-gray-400 z-50 md:w-auto md:h-auto transform translate-x-full md:translate-x-0 transition-transform duration-500 text-center text-xl md:text-base">
+                
+                    <!-- Close Button -->
+                <li class="flex justify-end p-4 md:hidden">
+                    <button onclick="Menu()">
+                        <i data-lucide="square-x" class="w-9 h-9 text-gray-700 text-opacity-50"></i>
+                    </button>
+                </li> 
+
+                <!-- START OF MENU LIST -->
+                <li class="my-11 md:my-0 mx-2">
                     <a href="education.html" class="text-gray-800 px-4 py-2 rounded hover:bg-pink-300 hover:text-pink-600 transition ease-in-out duration-700">Education</a>
                 </li>
-                <li>
+                <li class="my-11 md:my-0 mx-2">
                     <a href="experience.html" class="text-gray-800 px-4 py-2 rounded hover:bg-red-300 hover:text-red-600 transition ease-in-out duration-700">Experience</a>
                 </li>
-                <li>
+                <li class="my-11 md:my-0 mx-2">
                     <a href="portfolio.html" class="text-gray-800 px-4 py-2 rounded hover:bg-purple-300 hover:text-purple-600 transition ease-in-out duration-700">Portfolio</a>
                 </li>
-                <li>
+                <li class="my-11 md:my-0 mx-2">
                     <a href="certificate.html" class="text-gray-800 px-4 py-2 rounded hover:bg-blue-300 hover:text-indigo-600 transition ease-in-out duration-700">Certificates</a>
                 </li>
-                <li>
+                <li class="my-11 md:my-0 mx-2">
                     <a href="profiles.html" class="text-gray-800 px-4 py-2 rounded hover:bg-indigo-300 hover:text-indigo-600 transition ease-in-out duration-700">Profiles</a>
                 </li>
             </ul>
@@ -311,17 +329,23 @@
     </div>
 </footer>
 <script>
+    lucide.createIcons();
 
-function filterCards(category){
-    const cards = document.querySelectorAll('.card');
-    cards.forEach(card => {
-        if (category === 'all' || card.classList.contains(category)){
-            card.style.display = 'block';
-        } else{
-            card.style.display = 'none';
-        }
-    });
-}
+    function Menu(icon) {
+        const menu = document.getElementById("menu-list");
+            menu.classList.toggle("translate-x-full");
+    }
+
+    function filterCards(category){
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            if (category === 'all' || card.classList.contains(category)){
+                card.style.display = 'block';
+            } else{
+                card.style.display = 'none';
+            }
+        });
+    }
 </script>
 </body>
 </html>
